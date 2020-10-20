@@ -1,0 +1,48 @@
+.footer {
+  height: 10vh;
+  width: 100%;
+  background-color: #202020;
+  color: white;
+}
+
+.paragraph {
+  padding: 10px;
+  text-align: justify;
+}
+
+div.noPadding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+div.noMargin {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.fixImagePosition {
+  background-image: url("../assets/banner.jpg");
+  background-attachment: fixed;
+}
+
+.header-container {
+  position: relative;
+}
+
+/* Bottom right text */
+.header-text {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.header-font {
+  font-size: 40px;
+}
+
+.subHeader-font {
+  font-size: 20px;
+}
