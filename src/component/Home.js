@@ -1,6 +1,9 @@
 import React from "react";
-import logo from "../logo.svg";
-import banner from "../assets/banner.jpg";
+import logo from "../assets/logo.png";
+import banner from "../assets/banner.png";
+import cappuccino from "../assets/cappuccino.png";
+import latte from "../assets/latte.png";
+import espresso from "../assets/espresso.png";
 import "../css/Home.css";
 
 class Home extends React.Component {
@@ -9,15 +12,16 @@ class Home extends React.Component {
       <div>
         <header>
           <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" style={{marginTop:"5px"}}>
               <img
                 src={logo}
-                width="30"
-                height="30"
-                class="d-inline-block align-top"
+                width="40"
+                height="40"
+                style={{marginBottom:"5px"}}
+                class="d-inline-block"
                 alt=""
               ></img>
-              Bootstrap
+              Coffee
             </a>
             <button
               class="navbar-toggler"
@@ -60,12 +64,11 @@ class Home extends React.Component {
 
         <article style={{ marginTop: "50px" }}>
           <div class="header-container">
-            <img src={banner} width="100%" class="img-fluid" alt=""></img>
-            <div class="header-text">
-              <h1>Coffee..</h1>
-              <h3>
+            <img src={banner} width= "100%" class="img-fluid" alt=""></img>
+            <div class="header-text" style={{}}>
+              <h1 class = "header-font">Coffee..</h1>
+              <h3 class = "subHeader-font">
                 Coffee is a beverage that puts one to sleep when not drank.
-                ...Annonyms
               </h3>
             </div>
           </div>
@@ -86,26 +89,42 @@ class Home extends React.Component {
             class="fixImagePosition"
             style={{
               height: "100vh",
+            
+              
             }}
           ></div>
 
-          <div class="row noPadding noMargin">
+          <div class="row noPadding noMargin"  style={{marginTop : 20}}>
             <div class="col-lg-4">
               <img
-                src={logo}
-                width="40%"
-                height="40%"
+                src={cappuccino}
+                width="50%"
+                height="50%"
                 class="img-fluid"
                 alt=""
               ></img>
-              <h2>Heading</h2>
+              <h2>Cappuccino</h2>
               <div class="row noPadding noMargin">
                 <p class="col-sm-3 col-lg-0"></p>
                 <p class="col-sm-6 col-lg-12">
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis
-                  euismod. Nullam id dolor id nibh ultricies vehicula ut id
-                  elit. Morbi leo risus, porta ac consectetur ac, vestibulum at
-                  eros. Praesent commodo cursus magna.
+               Cappuccino is an Italian coffee-based drink prepared with espresso, hot milk, and milk foam. But do you know where the drink - and the word - comes from? And would you believe this hot new beverage sweeping the nation is actually a hundred years old? </p>
+                <p class="col-sm-3 col-lg-0"></p>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <img
+                src={latte}
+                width="50%"
+                height="50%"
+                class="img-fluid"
+                alt=""
+              ></img>
+              <h2>Latte</h2>
+              <div class="row noPadding noMargin">
+                <p class="col-sm-3 col-lg-0"></p>
+                <p class="col-sm-6 col-lg-12">
+                Caffè latte is a coffee-based drink made primarily from espresso and steamed milk. It consists of one-third espresso, two-thirds heated milk and about 1cm of foam. Traditionally the cafe latte is a ratio of two parts coffee and one part steamed milk.
                 </p>
                 <p class="col-sm-3 col-lg-0"></p>
               </div>
@@ -113,41 +132,17 @@ class Home extends React.Component {
 
             <div class="col-lg-4">
               <img
-                src={logo}
-                width="40%"
-                height="40%"
+                src={espresso}
+                width="50%"
+                height="50%"
                 class="img-fluid"
                 alt=""
               ></img>
-              <h2>Heading</h2>
+              <h2>Espresso</h2>
               <div class="row noPadding noMargin">
                 <p class="col-sm-3 col-lg-0"></p>
                 <p class="col-sm-6 col-lg-12">
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis
-                  euismod. Nullam id dolor id nibh ultricies vehicula ut id
-                  elit. Morbi leo risus, porta ac consectetur ac, vestibulum at
-                  eros. Praesent commodo cursus magna.
-                </p>
-                <p class="col-sm-3 col-lg-0"></p>
-              </div>
-            </div>
-
-            <div class="col-lg-4">
-              <img
-                src={logo}
-                width="40%"
-                height="40%"
-                class="img-fluid"
-                alt=""
-              ></img>
-              <h2>Heading</h2>
-              <div class="row noPadding noMargin">
-                <p class="col-sm-3 col-lg-0"></p>
-                <p class="col-sm-6 col-lg-12">
-                  Donec sed odio dui. Etiam porta sem malesuada magna mollis
-                  euismod. Nullam id dolor id nibh ultricies vehicula ut id
-                  elit. Morbi leo risus, porta ac consectetur ac, vestibulum at
-                  eros. Praesent commodo cursus magna.
+                Espresso coffee can be made with a wide variety of coffee beans and roast levels. Espresso is generally thicker than coffee brewed by other methods, has a higher concentration of suspended and dissolved solids, and has crema on top.
                 </p>
                 <p class="col-sm-3 col-lg-0"></p>
               </div>
